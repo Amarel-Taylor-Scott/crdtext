@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crdtext"
+version = "0.1.0"
+description = "A convergent replicated text type (RGA CRDT) in pure Python — N replicas edit concurrently, exchange ops in any order (delayed, duplicated, interleaved), and provably converge. Tombstones, causal buffering, version vectors, safe compaction. Zero dependencies; the test suite is the proof."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Amarel Taylor Scott" }]
+keywords = ["crdt", "rga", "collaborative-editing", "local-first", "replicated",
+            "eventual-consistency", "convergence", "text-editing", "offline-first",
+            "distributed-systems"]
+dependencies = []
+
+[project.scripts]
+crdtext = "crdtext.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["crdtext"]
