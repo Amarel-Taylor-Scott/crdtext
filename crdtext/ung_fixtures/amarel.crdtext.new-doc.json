@@ -1,0 +1,22 @@
+[
+ {
+  "expect": {
+   "state": "{\"clock\":0,\"elements\":[],\"format\":\"crdtext-state-1\",\"pending\":[],\"replica_id\":\"a\",\"seen_seq\":{},\"vv\":{}}",
+   "text": ""
+  },
+  "inputs": {},
+  "parameters": {
+   "replica_id": "a"
+  }
+ },
+ {
+  "expect": {
+   "state": "{\"clock\":0,\"elements\":[],\"format\":\"crdtext-state-1\",\"pending\":[],\"replica_id\":\"replica-2\",\"seen_seq\":{},\"vv\":{}}",
+   "text": ""
+  },
+  "inputs": {},
+  "parameters": {
+   "replica_id": "replica-2"
+  }
+ }
+]
